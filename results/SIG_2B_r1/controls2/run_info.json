@@ -1,0 +1,67 @@
+{
+ "model": "Qwen/Qwen3.5-2B",
+ "revision": null,
+ "adapter": "checkpoints/sig/2B_r1/grpo/final",
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "test_id": {
+   "episodes": 1530,
+   "mean_gen_tokens": 90.6156862745098,
+   "max_gen_tokens": 190,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_template": {
+   "episodes": 1782,
+   "mean_gen_tokens": 93.58361391694724,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 6,
+   "thinking_unfinished": 0
+  },
+  "test_structural": {
+   "episodes": 2082,
+   "mean_gen_tokens": 130.56340057636888,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 157,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 64,
+ "dtype": "bfloat16",
+ "splits": "test_id,test_template,test_structural",
+ "limit_groups": null,
+ "timing": {
+  "test_id": {
+   "episodes": 1530,
+   "seconds": 155.87511682510376
+  },
+  "test_template": {
+   "episodes": 1782,
+   "seconds": 190.0238220691681
+  },
+  "test_structural": {
+   "episodes": 2082,
+   "seconds": 261.9924247264862
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 13.254213094711304,
+ "total_seconds": 621.4600918292999,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA A40"
+}

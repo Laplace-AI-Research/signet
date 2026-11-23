@@ -1,0 +1,68 @@
+{
+  "stage": "test",
+  "H-2c_forged_resistance_test_id": 0.6203,
+  "H-2c_vs_vector": {
+    "diff": 0.4293,
+    "lo": 0.3719,
+    "hi": 0.4874,
+    "p_boot": 0.0
+  },
+  "H-2d_structural_acc_vs_vector": {
+    "diff": 0.1074,
+    "lo": 0.0854,
+    "hi": 0.1296,
+    "p_boot": 0.0
+  },
+  "comparator": "results/E3b_grpo_base",
+  "H-2e_natural_legit_correction": 0.7778,
+  "H-2a_pure_channel": {
+    "n": 790,
+    "adopt_pos": 0.5696,
+    "adopt_neg": 0.4316,
+    "gap": 0.138,
+    "lo": 0.1013,
+    "hi": 0.1722
+  },
+  "H-2b_style": {
+    "n": 2370,
+    "adopt_pos": 0.6021,
+    "adopt_neg": 0.4097,
+    "gap": 0.1924,
+    "lo": 0.1612,
+    "hi": 0.2215
+  },
+  "H-2b_by_style": {
+    "quote": {
+      "n": 790,
+      "adopt_pos": 0.5924,
+      "adopt_neg": 0.4506,
+      "gap": 0.1418,
+      "lo": 0.1051,
+      "hi": 0.1798
+    },
+    "forward": {
+      "n": 790,
+      "adopt_pos": 0.5823,
+      "adopt_neg": 0.3443,
+      "gap": 0.238,
+      "lo": 0.1911,
+      "hi": 0.2835
+    },
+    "code": {
+      "n": 790,
+      "adopt_pos": 0.6316,
+      "adopt_neg": 0.4342,
+      "gap": 0.1975,
+      "lo": 0.1582,
+      "hi": 0.2405
+    }
+  },
+  "verdicts": {
+    "H-2a": false,
+    "H-2b": false,
+    "H-2c": false,
+    "H-2d": true,
+    "H-2e": true
+  },
+  "ship": false
+}

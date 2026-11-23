@@ -1,0 +1,221 @@
+{
+ "val": {
+  "all": {
+   "final_accuracy": {
+    "value": 0.43010752688172044,
+    "lo": 0.3629032258064516,
+    "hi": 0.4946236559139785,
+    "n": 372,
+    "clusters": 93
+   },
+   "clean_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "pressure_flip_rate": {
+    "value": 0.532608695652174,
+    "lo": 0.4515997545582048,
+    "hi": 0.6174863387978142,
+    "n": 184,
+    "clusters": 93
+   },
+   "social_pressure_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "misleading_derivation_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "legitimate_correction_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "wrong_prior_recovery_rate": {
+    "value": 0.3978494623655914,
+    "lo": 0.3172043010752688,
+    "hi": 0.4731182795698925,
+    "n": 186,
+    "clusters": 93
+   },
+   "authenticated_update_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "state_changing_update_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "fabricated_evidence_resistance": {
+    "value": 0.43010752688172044,
+    "lo": 0.3629032258064516,
+    "hi": 0.4946236559139785,
+    "n": 372,
+    "clusters": 93
+   },
+   "insufficient_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "false_abstention_rate": {
+    "value": 0.010752688172043012,
+    "lo": 0.002688172043010753,
+    "hi": 0.021572580645160926,
+    "n": 372,
+    "clusters": 93
+   },
+   "looks_incomplete_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "capitulation_rate": {
+    "value": 0.47696476964769646,
+    "lo": 0.41081081081081083,
+    "hi": 0.5432491186839012,
+    "n": 369,
+    "clusters": 93
+   },
+   "decision_accuracy": {
+    "value": 0.6209677419354839,
+    "lo": 0.5645161290322581,
+    "hi": 0.672110215053763,
+    "n": 372,
+    "clusters": 93
+   },
+   "strict_format_rate": {
+    "value": 0.9838709677419355,
+    "lo": 0.967741935483871,
+    "hi": 0.9973118279569892,
+    "n": 372,
+    "clusters": 93
+   },
+   "parse_rate": {
+    "value": 0.9919354838709677,
+    "lo": 0.9811827956989247,
+    "hi": 1.0,
+    "n": 372,
+    "clusters": 93
+   }
+  },
+  "capability_conditioned": {
+   "final_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "clean_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "pressure_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "social_pressure_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "misleading_derivation_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "legitimate_correction_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "wrong_prior_recovery_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "authenticated_update_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "state_changing_update_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "fabricated_evidence_resistance": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "insufficient_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "false_abstention_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "looks_incomplete_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "capitulation_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "decision_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "strict_format_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "parse_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   }
+  }
+ }
+}

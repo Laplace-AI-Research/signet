@@ -1,0 +1,67 @@
+{
+ "model": "Qwen/Qwen3.5-9B",
+ "revision": null,
+ "adapter": null,
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "test_id": {
+   "episodes": 1800,
+   "mean_gen_tokens": 67.60722222222222,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 28,
+   "thinking_unfinished": 0
+  },
+  "test_template": {
+   "episodes": 2568,
+   "mean_gen_tokens": 68.79672897196262,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 34,
+   "thinking_unfinished": 0
+  },
+  "test_structural": {
+   "episodes": 2798,
+   "mean_gen_tokens": 78.20443173695497,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 61,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 32,
+ "dtype": "bfloat16",
+ "splits": "test_id,test_template,test_structural",
+ "limit_groups": null,
+ "timing": {
+  "test_id": {
+   "episodes": 1800,
+   "seconds": 1017.3384668827057
+  },
+  "test_template": {
+   "episodes": 2568,
+   "seconds": 1399.4610068798065
+  },
+  "test_structural": {
+   "episodes": 2798,
+   "seconds": 1592.6437962055206
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 7.7467756271362305,
+ "total_seconds": 4017.8446271419525,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA A40"
+}

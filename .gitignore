@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+checkpoints/
+data/*
+!data/conviction_bench/
+data/conviction_bench/*
+!data/conviction_bench/v0.1/
+data/conviction_bench/v0.1/*
+!data/conviction_bench/v0.1/FROZEN.txt
+results/my_*

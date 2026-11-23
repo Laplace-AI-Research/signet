@@ -1,0 +1,64 @@
+[project]
+name = "conviction"
+version = "0.1.0"
+description = "ConvictionBench + training code: evidence-sensitive belief revision in small language models"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+conviction-generate = "conviction.data.cli:main"
+conviction-eval = "conviction.evaluation.runner:main"
+conviction-eval-api = "conviction.evaluation.api.run:main"
+conviction-report = "conviction.analysis.report:main"
+
+[project.optional-dependencies]
+# Frontier-model evaluation through provider APIs (conviction-eval-api). Keys are read from the environment.
+api = [
+    "anthropic>=2.8",
+    "openai>=3.49",
+]
+# Installed on the GPU pod (and optionally locally for CPU smoke tests).
+train = [
+    "torch==2.14.1",  # newest build available for CUDA 13.0 drivers (see [tool.uv.sources])
+    "transformers>=4.51",
+    "trl>=0.19",
+    "peft>=0.15",
+    "accelerate>=1.6",
+    "datasets>=3.5",
+]
+analysis = [
+    "matplotlib>=3.8",
+    "pandas>=2.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "hypothesis>=6.100",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["conviction"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+# On Linux GPU pods, install the CUDA 13.0 build (runs on driver >= 13.0, i.e. 580+).
+# The default PyPI wheel (cu132) silently falls back to CPU on 13.0 hosts.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu130", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true

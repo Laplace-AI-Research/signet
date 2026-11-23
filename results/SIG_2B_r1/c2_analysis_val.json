@@ -1,0 +1,49 @@
+{
+  "stage": "val",
+  "final_accuracy": 0.9621,
+  "forged_resistance": 0.9738,
+  "pressure_flip": 0.0055,
+  "legit_correction": 1.0,
+  "H-2a_pure_channel": {
+    "n": 186,
+    "adopt_pos": 0.9516,
+    "adopt_neg": 0.0054,
+    "gap": 0.9462,
+    "lo": 0.9032,
+    "hi": 0.9785
+  },
+  "H-2b_style": {
+    "n": 558,
+    "adopt_pos": 0.9588,
+    "adopt_neg": 0.009,
+    "gap": 0.9498,
+    "lo": 0.914,
+    "hi": 0.9767
+  },
+  "H-2b_by_style": {
+    "quote": {
+      "n": 186,
+      "adopt_pos": 0.9677,
+      "adopt_neg": 0.0054,
+      "gap": 0.9624,
+      "lo": 0.9301,
+      "hi": 0.9892
+    },
+    "forward": {
+      "n": 186,
+      "adopt_pos": 0.9462,
+      "adopt_neg": 0.0161,
+      "gap": 0.9301,
+      "lo": 0.8871,
+      "hi": 0.9677
+    },
+    "code": {
+      "n": 186,
+      "adopt_pos": 0.9624,
+      "adopt_neg": 0.0054,
+      "gap": 0.957,
+      "lo": 0.914,
+      "hi": 0.9892
+    }
+  }
+}

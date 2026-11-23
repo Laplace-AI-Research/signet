@@ -1,0 +1,67 @@
+{
+ "model": "Qwen/Qwen3.5-9B",
+ "revision": null,
+ "adapter": null,
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "test_id": {
+   "episodes": 1530,
+   "mean_gen_tokens": 64.70718954248366,
+   "max_gen_tokens": 151,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_template": {
+   "episodes": 1782,
+   "mean_gen_tokens": 65.35129068462402,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 4,
+   "thinking_unfinished": 0
+  },
+  "test_structural": {
+   "episodes": 2082,
+   "mean_gen_tokens": 75.19596541786744,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 14,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 32,
+ "dtype": "bfloat16",
+ "splits": "test_id,test_template,test_structural",
+ "limit_groups": null,
+ "timing": {
+  "test_id": {
+   "episodes": 1530,
+   "seconds": 238.0397491455078
+  },
+  "test_template": {
+   "episodes": 1782,
+   "seconds": 282.91939520835876
+  },
+  "test_structural": {
+   "episodes": 2082,
+   "seconds": 437.1995298862457
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 10.054876804351807,
+ "total_seconds": 968.5302467346191,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA A100-SXM4-80GB"
+}

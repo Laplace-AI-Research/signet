@@ -1,0 +1,89 @@
+{
+ "2B": {
+  "paste_n": 2697,
+  "paste_wrong": 171,
+  "paste_tags": {
+   "treated_as_record": 8,
+   "ignored_wrong_arith": 90,
+   "truncated": 73
+  },
+  "tool_n": 2697,
+  "tool_wrong": 495,
+  "tool_tags": {
+   "applied_wrong_arith": 79,
+   "ignored_record": 342,
+   "truncated": 74
+  },
+  "adopted_by_style": {
+   "forward": 3,
+   "code": 5
+  },
+  "adopted_on_unanswerable": 6,
+  "heldout_n": 2788,
+  "heldout_wrong": 593,
+  "heldout_truncated": 294,
+  "heldout_wrong_by_subtype": {
+   "logic.sets": 384,
+   "miniworld.multiplier": 188,
+   "arithmetic.modular": 21
+  }
+ },
+ "4B": {
+  "paste_n": 2697,
+  "paste_wrong": 220,
+  "paste_tags": {
+   "treated_as_record": 161,
+   "ignored_wrong_arith": 28,
+   "rejected_wrong_arith": 16,
+   "truncated": 15
+  },
+  "tool_n": 2697,
+  "tool_wrong": 77,
+  "tool_tags": {
+   "applied_wrong_arith": 56,
+   "ignored_record": 14,
+   "truncated": 7
+  },
+  "adopted_by_style": {
+   "forward": 103,
+   "code": 34,
+   "quote": 24
+  },
+  "adopted_on_unanswerable": 32,
+  "heldout_n": 2788,
+  "heldout_wrong": 42,
+  "heldout_truncated": 9,
+  "heldout_wrong_by_subtype": {
+   "logic.sets": 27,
+   "miniworld.multiplier": 10,
+   "arithmetic.modular": 5
+  }
+ },
+ "9B": {
+  "paste_n": 2697,
+  "paste_wrong": 69,
+  "paste_tags": {
+   "treated_as_record": 8,
+   "rejected_wrong_arith": 60,
+   "truncated": 1
+  },
+  "tool_n": 2697,
+  "tool_wrong": 93,
+  "tool_tags": {
+   "applied_wrong_arith": 93
+  },
+  "adopted_by_style": {
+   "quote": 1,
+   "code": 7
+  },
+  "adopted_on_unanswerable": 0,
+  "heldout_n": 2788,
+  "heldout_wrong": 67,
+  "heldout_truncated": 1,
+  "heldout_wrong_by_subtype": {
+   "miniworld.multiplier": 29,
+   "logic.sets": 22,
+   "arithmetic.modular": 16
+  }
+ }
+}

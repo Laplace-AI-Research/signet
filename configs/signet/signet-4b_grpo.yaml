@@ -1,0 +1,36 @@
+# Signet-4B: GRPO from the base (RL-only recipe), exactly as trained (= configs/grpo_c2_r1.yaml with the model set;
+# the revision was main at training time, pinned here). python -m conviction.training.train_grpo --config <this>
+model: Qwen/Qwen3.5-4B
+revision: 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
+init_adapter: null       # RL only: no SFT warm-start (as Vector/E3b)
+data_dir: data/conviction_bench/v0.1
+aug_file: data/conviction_bench/c2/train_aug_v2.jsonl   # Signet data: paired twin-pastes + contrast families
+aug_fraction: 0.5
+pair_trusted: true
+output_dir: checkpoints/signet-4b/grpo
+condition: base
+seed: 1
+n_prompts: 6400         # = 400 steps x 16 prompts, from the "grpo" half of train groups
+reward: full             # full | outcome_only (E4)
+one_per_group: false     # true = E5 (no counterfactual siblings)
+dtype: bfloat16
+lora: {r: 16, alpha: 32, dropout: 0.05, target_modules: all-linear}
+grpo:
+  max_steps: 400         # no warm-start, so twice Vector's 200 steps; no checkpoint selection
+  lr: 1.0e-5
+  scheduler: constant_with_warmup
+  warmup_steps: 10
+  batch_size: 16         # completions per device micro-batch (= 4 prompts x 4 generations)
+  grad_accum: 4          # 16 prompts / 64 completions per optimizer step
+  num_generations: 4
+  max_completion_length: 192   # reason-first responses carry brief working
+  temperature: 1.0
+  beta: 0.0              # TRL default; KL reference would be the SFT policy if enabled
+  loss_type: dapo        # TRL 1.17 default
+  scale_rewards: group
+  num_iterations: 1
+  gradient_checkpointing: true
+  bf16: true
+  logging_steps: 1
+  save_steps: 25
+  log_completions: false

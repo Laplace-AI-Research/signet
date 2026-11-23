@@ -1,0 +1,56 @@
+{
+ "model": "Qwen/Qwen3.5-2B",
+ "revision": null,
+ "adapter": "checkpoints/sig/2B_r1/grpo/final",
+ "condition": "base_paraphrase",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "test_id": {
+   "episodes": 2393,
+   "mean_gen_tokens": 87.3272043460092,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 1,
+   "thinking_unfinished": 0
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "mean_gen_tokens": 129.9996413199426,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 215,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 64,
+ "dtype": "bfloat16",
+ "splits": "test_id,test_structural",
+ "limit_groups": null,
+ "timing": {
+  "test_id": {
+   "episodes": 2393,
+   "seconds": 377.52206158638
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "seconds": 569.7183384895325
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 10.484441757202148,
+ "total_seconds": 958.240745306015,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA A40"
+}

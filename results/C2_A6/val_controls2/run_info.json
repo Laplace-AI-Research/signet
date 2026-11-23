@@ -1,0 +1,45 @@
+{
+ "model": "Qwen/Qwen3-1.7B",
+ "revision": null,
+ "adapter": "checkpoints/c2/sft_fix2/final,checkpoints/c2/grpo_a6/final",
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "val": {
+   "episodes": 1422,
+   "mean_gen_tokens": 68.85583684950774,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 4,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 64,
+ "dtype": "bfloat16",
+ "splits": "val",
+ "limit_groups": null,
+ "timing": {
+  "val": {
+   "episodes": 1422,
+   "seconds": 119.09903836250305
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 9.406492233276367,
+ "total_seconds": 128.75444102287292,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA GeForce RTX 4090"
+}

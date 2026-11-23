@@ -1,0 +1,99 @@
+{
+ "model": "Qwen/Qwen3-1.7B",
+ "revision": null,
+ "adapter": "checkpoints/sig/1.7B_r2a/grpo/final",
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "test_id": {
+   "episodes": 2393,
+   "mean_gen_tokens": 99.64437944003343,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 10,
+   "thinking_unfinished": 0
+  },
+  "test_id_natural": {
+   "episodes": 1023,
+   "mean_gen_tokens": 95.48387096774194,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 4,
+   "thinking_unfinished": 0
+  },
+  "test_template": {
+   "episodes": 2674,
+   "mean_gen_tokens": 100.21278982797307,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 9,
+   "thinking_unfinished": 0
+  },
+  "test_template_natural": {
+   "episodes": 1140,
+   "mean_gen_tokens": 96.54824561403508,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 1,
+   "thinking_unfinished": 0
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "mean_gen_tokens": 119.88952654232425,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 69,
+   "thinking_unfinished": 0
+  },
+  "test_structural_natural": {
+   "episodes": 1140,
+   "mean_gen_tokens": 111.60175438596491,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 14,
+   "thinking_unfinished": 0
+  },
+  "test_adversarial": {
+   "episodes": 22,
+   "mean_gen_tokens": 92.31818181818181,
+   "max_gen_tokens": 144,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 64,
+ "dtype": "bfloat16",
+ "splits": "test_id,test_template,test_structural,test_adversarial",
+ "limit_groups": null,
+ "timing": {
+  "test_id": {
+   "episodes": 2393,
+   "seconds": 271.724112033844
+  },
+  "test_template": {
+   "episodes": 2674,
+   "seconds": 303.21598386764526
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "seconds": 358.8466889858246
+  },
+  "test_adversarial": {
+   "episodes": 22,
+   "seconds": 4.811468124389648
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 7.021250247955322,
+ "total_seconds": 1388.909185409546,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA GeForce RTX 4090"
+}

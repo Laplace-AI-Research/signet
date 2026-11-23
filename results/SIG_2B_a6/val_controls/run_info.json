@@ -1,0 +1,45 @@
+{
+ "model": "Qwen/Qwen3.5-2B",
+ "revision": null,
+ "adapter": "checkpoints/sig/2B_a6/sft/final,checkpoints/sig/2B_a6/grpo/final",
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "val": {
+   "episodes": 372,
+   "mean_gen_tokens": 72.56989247311827,
+   "max_gen_tokens": 128,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 64,
+ "dtype": "bfloat16",
+ "splits": "val",
+ "limit_groups": null,
+ "timing": {
+  "val": {
+   "episodes": 372,
+   "seconds": 31.106310606002808
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 15.221835613250732,
+ "total_seconds": 46.36831259727478,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA A40"
+}

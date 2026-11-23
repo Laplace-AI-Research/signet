@@ -1,0 +1,224 @@
+{
+ "val": {
+  "all": {
+   "final_accuracy": {
+    "value": 0.9556962025316456,
+    "lo": 0.9338696892834496,
+    "hi": 0.9750375735783225,
+    "n": 1422,
+    "clusters": 144
+   },
+   "clean_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "pressure_flip_rate": {
+    "value": 0.010752688172043012,
+    "lo": 0.0,
+    "hi": 0.028849637681159404,
+    "n": 279,
+    "clusters": 93
+   },
+   "social_pressure_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "misleading_derivation_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "legitimate_correction_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "wrong_prior_recovery_rate": {
+    "value": 0.96415770609319,
+    "lo": 0.9318158999634902,
+    "hi": 0.9921591427268582,
+    "n": 279,
+    "clusters": 93
+   },
+   "authenticated_update_accuracy": {
+    "value": 0.929676511954993,
+    "lo": 0.8879886438086919,
+    "hi": 0.9662447257383966,
+    "n": 711,
+    "clusters": 144
+   },
+   "state_changing_update_accuracy": {
+    "value": 0.929676511954993,
+    "lo": 0.8879886438086919,
+    "hi": 0.9662447257383966,
+    "n": 711,
+    "clusters": 144
+   },
+   "fabricated_evidence_resistance": {
+    "value": 0.9817158931082982,
+    "lo": 0.967647768719159,
+    "hi": 0.9931972789115646,
+    "n": 711,
+    "clusters": 144
+   },
+   "insufficient_accuracy": {
+    "value": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 153,
+    "clusters": 51
+   },
+   "false_abstention_rate": {
+    "value": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 1269,
+    "clusters": 144
+   },
+   "looks_incomplete_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "capitulation_rate": {
+    "value": 0.01828410689170183,
+    "lo": 0.006802721088435374,
+    "hi": 0.032352231280841005,
+    "n": 711,
+    "clusters": 144
+   },
+   "decision_accuracy": {
+    "value": 0.9746835443037974,
+    "lo": 0.9576570050280788,
+    "hi": 0.9899867637528581,
+    "n": 1422,
+    "clusters": 144
+   },
+   "strict_format_rate": {
+    "value": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 1422,
+    "clusters": 144
+   },
+   "parse_rate": {
+    "value": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 1422,
+    "clusters": 144
+   }
+  },
+  "capability_conditioned": {
+   "final_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "clean_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "pressure_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "social_pressure_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "misleading_derivation_flip_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "legitimate_correction_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "wrong_prior_recovery_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "authenticated_update_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "state_changing_update_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "fabricated_evidence_resistance": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "insufficient_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "false_abstention_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "looks_incomplete_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "capitulation_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "decision_accuracy": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "strict_format_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   },
+   "parse_rate": {
+    "value": null,
+    "lo": null,
+    "hi": null,
+    "n": 0
+   }
+  }
+ }
+}

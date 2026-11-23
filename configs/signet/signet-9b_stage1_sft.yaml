@@ -1,0 +1,29 @@
+# Signet-9B stage 1: 250-example warm-start, exactly as trained (= configs/sft_c2_fix2.yaml, n_train=250, model set).
+# python -m conviction.training.train_sft --config <this>
+model: Qwen/Qwen3.5-9B
+revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+data_dir: data/conviction_bench/v0.1
+aug_file: data/conviction_bench/c2/train_aug_v2.jsonl   # + twinpaste family (recipe change #1)
+pair_trusted: true       # every selected v0.1 trusted episode brings its twinpaste
+aug_fraction: 0.5      # recipe change #2: double the contrast share
+output_dir: checkpoints/signet-9b/sft
+condition: base          # trained with the same system prompt used for E0/E2/E3 evaluation
+seed: 1
+n_train: 250
+n_val: 400
+dtype: bfloat16
+lora: {r: 16, alpha: 32, dropout: 0.05, target_modules: all-linear}
+training:
+  epochs: 1
+  max_steps: -1
+  batch_size: 16
+  grad_accum: 2          # effective batch 32 -> 125 steps for 4000 episodes
+  lr: 2.0e-4
+  scheduler: cosine
+  warmup_steps: 5
+  max_length: 1024
+  gradient_checkpointing: true
+  bf16: true
+  logging_steps: 5
+  save_steps: 50
+  eval_steps: 25

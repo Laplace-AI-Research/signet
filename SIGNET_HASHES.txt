@@ -1,0 +1,14 @@
+# SHA-256 of the Signet upload files (adapter weights and configs), built by scripts/signet_package.py.
+# Base revisions are pinned in each adapter_config.json.
+e98a4266f23dcdf0ea5651abaea9c1dc3f59ed726f22714378a5ce0d144507c3  Signet-2B/adapter_config.json
+c9074d6abec60b30375937aea65d86eda530b8e05bbdbb03063df4acac7dc880  Signet-2B/adapter_model.safetensors
+f647385aa5c9b7a4696fd4188b5a3d00bdb358a27953cc7752fda0b910c49709  Signet-4B/adapter_config.json
+8f4a978dd5aabc7b7887174f920bcc43b58f3a230a469fc14000d3584a6b5f58  Signet-4B/adapter_model.safetensors
+e56cbdb3af37d6d7dba67b77e63105d3e0e0533bd29a6a0004000bff1660b645  Signet-9B/adapters/stage1_sft/adapter_config.json
+b3b8f0759ddb93a0a310cebfd9ea7a1811a98b9a9a176edcda75046d7f00870f  Signet-9B/adapters/stage1_sft/adapter_model.safetensors
+308fc3261f1061b9b9577a8cf5916fc69875223e9448ba9fd571ae5b183f6880  Signet-9B/adapters/stage2_grpo/adapter_config.json
+72088ad2c5b6e01a4cfda2a52f4aeed8715c5477d10ed51a6feb79b9f7ebcfb2  Signet-9B/adapters/stage2_grpo/adapter_model.safetensors
+a2b87ebe3da79a454450e9c0a940b401f0865eb76cb7b3a991b03f8cdf915497  Signet-9B/model-00001-of-00004.safetensors
+c3b2cec5c59479063ecafd28b7037d230b2a1a50d40646ecb4ce147befb2263d  Signet-9B/model-00002-of-00004.safetensors
+4826310cefbd832436bb24524100cfcad565de7830486f81559b6478f114d4e7  Signet-9B/model-00003-of-00004.safetensors
+43124252e352c2b228e27230bf425c1d5263e32ee1ac8bc938eb1b8911b8e2cd  Signet-9B/model-00004-of-00004.safetensors

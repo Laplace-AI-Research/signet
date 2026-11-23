@@ -1,0 +1,48 @@
+{
+  "V-S": {
+    "seed1_heldout_acc": 0.978,
+    "seed2_heldout_acc": 0.9718,
+    "diff": -0.0062,
+    "seed2_paste_gap": 0.9359,
+    "seed2_paste_lo": 0.9177,
+    "pass": true
+  },
+  "V-P": {
+    "splits": {
+      "test_id": {
+        "signet_public": 0.9851,
+        "signet_private": 0.9777,
+        "base_public": 0.7006,
+        "base_private": 0.6831,
+        "signet_drop": 0.0074,
+        "base_drop": 0.0175,
+        "ok": true
+      },
+      "test_template": {
+        "signet_public": 0.9749,
+        "signet_private": 0.9857,
+        "base_public": 0.6973,
+        "base_private": 0.6903,
+        "signet_drop": -0.0107,
+        "base_drop": 0.007,
+        "ok": true
+      },
+      "test_structural": {
+        "signet_public": 0.978,
+        "signet_private": 0.9754,
+        "base_public": 0.6878,
+        "base_private": 0.7071,
+        "signet_drop": 0.0026,
+        "base_drop": -0.0193,
+        "ok": true
+      }
+    },
+    "pass": true
+  },
+  "V-R": {
+    "base_prompt": 0.978,
+    "paraphrase": 0.9413,
+    "drop": 0.0367,
+    "pass": true
+  }
+}

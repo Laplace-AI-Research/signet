@@ -1,0 +1,99 @@
+{
+ "model": "Qwen/Qwen3.5-4B",
+ "revision": null,
+ "adapter": "checkpoints/sig/4B_r1/grpo/final",
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "test_id": {
+   "episodes": 2393,
+   "mean_gen_tokens": 81.27078980359381,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 1,
+   "thinking_unfinished": 0
+  },
+  "test_id_natural": {
+   "episodes": 1022,
+   "mean_gen_tokens": 77.53816046966732,
+   "max_gen_tokens": 178,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_template": {
+   "episodes": 2674,
+   "mean_gen_tokens": 83.30553477935676,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 2,
+   "thinking_unfinished": 0
+  },
+  "test_template_natural": {
+   "episodes": 1137,
+   "mean_gen_tokens": 78.13104661389622,
+   "max_gen_tokens": 198,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "mean_gen_tokens": 105.24103299856527,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 10,
+   "thinking_unfinished": 0
+  },
+  "test_structural_natural": {
+   "episodes": 1170,
+   "mean_gen_tokens": 96.61880341880342,
+   "max_gen_tokens": 199,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_adversarial": {
+   "episodes": 22,
+   "mean_gen_tokens": 74.0,
+   "max_gen_tokens": 101,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 32,
+ "dtype": "bfloat16",
+ "splits": "test_id,test_template,test_structural,test_adversarial",
+ "limit_groups": null,
+ "timing": {
+  "test_id": {
+   "episodes": 2393,
+   "seconds": 470.05636620521545
+  },
+  "test_template": {
+   "episodes": 2674,
+   "seconds": 554.6593234539032
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "seconds": 692.9320659637451
+  },
+  "test_adversarial": {
+   "episodes": 22,
+   "seconds": 5.676085948944092
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 64.9129889011383,
+ "total_seconds": 2493.2689924240112,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA A100-SXM4-80GB"
+}

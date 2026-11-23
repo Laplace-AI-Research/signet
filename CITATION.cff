@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use the Signet models or code, please cite them as below, and cite ConvictionBench."
+title: "Signet: Language Models That Check the Channel Before They Believe the Record"
+authors:
+  - family-names: Somu
+    given-names: Arya
+  - family-names: Nshuti Hirwa
+    given-names: Bruce
+version: "1.0"
+date-released: 2026-11-25
+license: Apache-2.0
+url: "https://laplaceresearch.org/signet/"
+repository-code: "https://github.com/Laplace-AI-Research/signet"
+references:
+  - type: report
+    title: "ConvictionBench: Evidence-Sensitive Belief Revision in Language Models"
+    authors:
+      - family-names: Somu
+        given-names: Arya
+      - family-names: Nshuti Hirwa
+        given-names: Bruce
+    institution:
+      name: Laplace Research
+    year: 2026
+    url: "https://laplaceresearch.org/convictionbench/paper.pdf"

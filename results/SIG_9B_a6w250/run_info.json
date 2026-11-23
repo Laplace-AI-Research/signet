@@ -1,0 +1,99 @@
+{
+ "model": "Qwen/Qwen3.5-9B",
+ "revision": null,
+ "adapter": "checkpoints/sig/9B_a6w250/sft/final,checkpoints/sig/9B_a6w250/grpo/final",
+ "condition": "base",
+ "decoding": {
+  "do_sample": false,
+  "temperature": null,
+  "top_p": null,
+  "top_k": null,
+  "seed": 0,
+  "max_new_tokens": 200,
+  "enable_thinking": false
+ },
+ "groups_per_split": 0,
+ "sample_seed": 20261110,
+ "generation_stats": {
+  "test_id": {
+   "episodes": 2393,
+   "mean_gen_tokens": 70.16590054325115,
+   "max_gen_tokens": 178,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_id_natural": {
+   "episodes": 1022,
+   "mean_gen_tokens": 68.17416829745596,
+   "max_gen_tokens": 170,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_template": {
+   "episodes": 2674,
+   "mean_gen_tokens": 73.2247569184742,
+   "max_gen_tokens": 172,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_template_natural": {
+   "episodes": 1135,
+   "mean_gen_tokens": 70.66519823788546,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 1,
+   "thinking_unfinished": 0
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "mean_gen_tokens": 87.03802008608321,
+   "max_gen_tokens": 200,
+   "hit_max_new_tokens": 1,
+   "thinking_unfinished": 0
+  },
+  "test_structural_natural": {
+   "episodes": 1171,
+   "mean_gen_tokens": 83.83859948761742,
+   "max_gen_tokens": 184,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  },
+  "test_adversarial": {
+   "episodes": 22,
+   "mean_gen_tokens": 66.72727272727273,
+   "max_gen_tokens": 95,
+   "hit_max_new_tokens": 0,
+   "thinking_unfinished": 0
+  }
+ },
+ "batch_size": 32,
+ "dtype": "bfloat16",
+ "splits": "test_id,test_template,test_structural,test_adversarial",
+ "limit_groups": null,
+ "timing": {
+  "test_id": {
+   "episodes": 2393,
+   "seconds": 403.9858968257904
+  },
+  "test_template": {
+   "episodes": 2674,
+   "seconds": 463.6041238307953
+  },
+  "test_structural": {
+   "episodes": 2788,
+   "seconds": 589.2565493583679
+  },
+  "test_adversarial": {
+   "episodes": 22,
+   "seconds": 5.115140914916992
+  }
+ },
+ "oom_splits": [],
+ "load_seconds": 14.398654699325562,
+ "total_seconds": 2098.733322620392,
+ "torch": "2.14.1+cu130",
+ "transformers": "5.22.2",
+ "engine": "hf",
+ "device": "cuda:0",
+ "python": "3.12.3",
+ "gpu": "NVIDIA A100-SXM4-80GB"
+}

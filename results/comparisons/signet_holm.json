@@ -1,0 +1,114 @@
+{
+ "n_tests": 15,
+ "n_boot": 10000,
+ "alpha": 0.05,
+ "tests": [
+  {
+   "model": "Signet-2B",
+   "test": "pure-channel gap > +0.30",
+   "estimate": 0.7708860759493671,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.0014998500149985003
+  },
+  {
+   "model": "Signet-2B",
+   "test": "paste-style gap > +0.20",
+   "estimate": 0.7928270042194093,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.0014998500149985003
+  },
+  {
+   "model": "Signet-2B",
+   "test": "held-out accuracy vs base",
+   "estimate": 0.3709428129829984,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-2B",
+   "test": "held-out flips vs base",
+   "estimate": -0.5118984453759219,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-2B",
+   "test": "held-out forged rejection vs base",
+   "estimate": 0.6416510318949343,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-4B",
+   "test": "pure-channel gap > +0.30",
+   "estimate": 0.970886075949367,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.0014998500149985003
+  },
+  {
+   "model": "Signet-4B",
+   "test": "paste-style gap > +0.20",
+   "estimate": 0.9168776371308017,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.0014998500149985003
+  },
+  {
+   "model": "Signet-4B",
+   "test": "held-out accuracy vs base",
+   "estimate": 0.37905718701700153,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-4B",
+   "test": "held-out flips vs base",
+   "estimate": -0.42329932196119113,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-4B",
+   "test": "held-out forged rejection vs base",
+   "estimate": 0.853658536585366,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-9B",
+   "test": "pure-channel gap > +0.30",
+   "estimate": 0.9518987341772152,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.0014998500149985003
+  },
+  {
+   "model": "Signet-9B",
+   "test": "paste-style gap > +0.20",
+   "estimate": 0.9510548523206751,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.0014998500149985003
+  },
+  {
+   "model": "Signet-9B",
+   "test": "held-out accuracy vs base",
+   "estimate": 0.29018547140649154,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-9B",
+   "test": "held-out flips vs base",
+   "estimate": -0.3883884661179272,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  },
+  {
+   "model": "Signet-9B",
+   "test": "held-out forged rejection vs base",
+   "estimate": 0.8217636022514071,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.0017998200179982003
+  }
+ ],
+ "all_reject": true,
+ "max_p_holm": 0.0017998200179982003
+}
