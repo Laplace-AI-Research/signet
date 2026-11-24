@@ -7,7 +7,7 @@ authors:
   - family-names: Nshuti Hirwa
     given-names: Bruce
 version: "1.0"
-date-released: 2026-11-25
+date-released: 2026-11-24
 license: Apache-2.0
 url: "https://laplaceresearch.org/signet/"
 repository-code: "https://github.com/Laplace-AI-Research/signet"
